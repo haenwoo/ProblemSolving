@@ -22,3 +22,9 @@
 ##### 예제 #2 vinko는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.
 
 ##### 예제 #3 mislav는 참여자 명단에는 두 명이 있지만, 완주자 명단에는 한 명밖에 없기 때문에 한명은 완주하지 못했습니다.
+
+## 문제 풀이 <br>
+cpp 의 unordered map 을 사용하여 해시 맵을 구성하였다.  
+map 에 <completion, count> 를 저장 (count는 동명이인 수)  
+participant에 대해 반복문을 돌며 completion에 존재하면 count를 -1로 하면서 체크  
+-> map 구성에 O(N) , 체크에 O(N)  
